@@ -1,0 +1,19 @@
+<img src="/games-background.jpg" class="about-background" alt="about Background" />
+<div class="about-page">
+    <app-navbar></app-navbar>
+    <h1>À propos : Lien entre le corps humain et l'océan</h1>
+    <p class="intro">
+        Le corps humain et l'océan partagent des similitudes fascinantes. Explorons quelques-unes des connexions clés.
+    </p>
+
+    <section class="info-section" *ngFor="let topic of topics">
+        <h2>{{ topic.title }}</h2>
+        <p>{{ topic.description }}</p>
+        <button (click)="toggleDetails(topic)">
+            {{ topic.showDetails ? 'Voir moins' : 'Voir plus' }}
+        </button>
+        <div *ngIf="topic.showDetails" class="details">
+            <p>{{ topic.details }}</p>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,12 @@
+<main class="home-content">
+    <video class="background" autoplay loop muted>
+        <source src="/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <section class="home-content-section">
+        <app-navbar></app-navbar>
+        <img class="video-play-button" (mouseenter)="onHover()" (click)="togglePlayPause()" src="{{isPlaying ? '/pause-solid.svg' : '/play-solid.svg'}}" alt="play">
+        <img class="logo" src="/logo-high.png" alt="logo">
+        <h1 class="home-content-section-title">OceanSync</h1>
+    </section>
+</main>

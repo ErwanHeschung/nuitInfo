@@ -1,0 +1,18 @@
+<img src="/get-it-back-background.jpg" class="get-it-back-background" alt="Game Background" />
+<section class="get-it-back-content">
+    <app-navbar></app-navbar>
+    <div class="score">
+        {{score}}/10
+    </div>
+    <img src="/character-scuba.png" class="sprite" alt="player sprite" 
+    [style.transform]="'translate(' + positionX + 'px, ' + positionY + 'px)  scaleX('+scale+') rotate(-45deg)'"/>
+    <h1 *ngIf="score===10 && !displayPopup">Bravo ! Tu as ramassé tous les dechets !</h1>
+    <img src="{{waste}}" *ngIf="isWasteDisplayed" class="waste" alt="waste sprite"
+    [style.transform]="'translate(' + wastePositionX + 'px, ' + wastePositionY + 'px)'"/>
+
+    <div class="popup" *ngIf="displayPopup">
+        <h2>{{randomInfo.titre}}</h2>
+        <p>{{randomInfo.description}}</p>
+    </div>
+
+</section>

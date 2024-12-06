@@ -1,0 +1,8 @@
+<div class="navbar">
+    <img class="navbar-logo" src="/bars-solid.svg" alt="navbar" (click)="toggleDropdown()">
+    <div class="navbar-dropdown" *ngIf="isVisible" [@fadeIn]>
+        <a class="navbar-dropdown-item" href="/home">Accueil</a>
+        <a class="navbar-dropdown-item" href="/games">Les jeux</a>
+        <a class="navbar-dropdown-item" href="/about">Quelques infos</a>
+    </div>  
+</div>

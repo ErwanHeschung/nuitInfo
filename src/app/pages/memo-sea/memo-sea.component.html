@@ -1,0 +1,22 @@
+<img src="/memory-background.jpg" class="memo-sea-background" alt="Game Background" />
+
+<section class="memo-sea">
+  <app-navbar></app-navbar>
+
+    <div class="memory-cards">
+        <app-memo-card *ngFor="let card of cards; let i = index" 
+                [image]="'/cards/card'+(i%4+1)+'.jpg'" 
+                [descriptionImg]="card.descriptionImg"
+                [description]="card.content" 
+                [title]="card.subject" 
+                [flip]="card.flipped"
+                (click)="flipCard(card)">
+                >
+        </app-memo-card>
+    </div>
+
+    <div *ngIf="gameOver" class="game-over">
+        <h1>Bien joué !</h1>
+        <img src="/rotate-right-solid.svg" alt="Restart" class="restart" (click)="restartGame()"/>
+    </div>
+</section>

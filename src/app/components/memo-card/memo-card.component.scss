@@ -1,0 +1,37 @@
+
+
+.card{
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    border: 1px solid #0000005e;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    background-color: white;
+    height: 300px;
+    width: 150px;
+    text-align: center;
+    &-image{
+        height: 300px;
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    h2,p{
+        color: black;
+    }
+
+}
+
+.card-description{
+    width: 50px;
+    height: 50px;
+}
+
+.card:hover{
+    filter:drop-shadow(0px 0px 20px rgba(0,0,0,0.5));
+}
+
+.card:active{
+    transform: scaleX(-1);
+}

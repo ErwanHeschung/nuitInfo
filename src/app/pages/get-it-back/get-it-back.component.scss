@@ -1,0 +1,68 @@
+.get-it-back-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.get-it-back-content{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    app-navbar{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    .score{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .waste{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        font-size: 2rem;
+        color: white;
+    }
+
+    h1{
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+        color: white;
+        position: absolute;
+        font-size: 5rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
+
+.popup{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.551);
+    width: 30%;
+    height: 20%;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.sprite{
+    position: absolute;
+    width:150px;
+    transition: all 0.3s ease;
+
+}

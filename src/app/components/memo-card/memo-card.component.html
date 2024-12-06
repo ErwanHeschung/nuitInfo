@@ -1,0 +1,10 @@
+<div class="card">
+    <div *ngIf="flip" class="card-content">
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
+        <img src="{{descriptionImg}}" alt="Card description" class="card-description" />
+    </div>
+    <div *ngIf="!flip" class="card-content">
+        <img src="{{image}}" alt="Card image" class="card-image" />
+    </div>  
+</div>
